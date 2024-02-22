@@ -8,7 +8,7 @@ def calculate_end_time(hour, mins, dura):
 
     end_hours = end_total_minutes // 60
     end_minutes = end_total_minutes % 60
-    while end_hours >= 24: end_hours -= 24
+    end_hours %= 24
 
     print(f"{end_hours:02d}:{end_minutes:02d}")
     
