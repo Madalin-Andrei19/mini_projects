@@ -11,3 +11,5 @@ def calculate_end_time(hour, mins, dura):
     while end_hours >= 24: end_hours -= 24
 
     print(f"{end_hours:02d}:{end_minutes:02d}")
+    
+calculate_end_time(hour, mins, dura)
